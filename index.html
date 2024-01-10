@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arsha-free cor[porate bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(81, 81, 155, 0.712);
+            /* line-height: 70px; */
+            height: 70px;
+            position: sticky;
+            /* overflow: hidden; */
+        }
+        .logo{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            margin-left: 100px;
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 80px;
+        }
+        .navbar .links li a{
+            margin: 0 10px;
+            padding: 0 17px;
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .navbar .links .circle{
+            color: white;
+            padding-left: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 10px;
+            display: inline-block;
+            transition: all .3s linear;
+        }
+        .navbar .links span:hover{
+            background-color: aqua
+        }
+        .navbar > .links > li > a:hover{
+            color: skyblue;
+        }
+        
+        
+        
+        .content{
+            background-color: rgb(0, 140, 255);
+            height: 500px;
+            display: flex;
+        }
+        .content .head{
+            /* position: absolute; */
+            /* top: 150px;
+            left: 50px; */
+            padding: 100px 40px;
+            color: white;
+        }
+        .content .head .heading{
+            font-size: 50px;
+            font-weight: 600;
+            color: white;
+            padding: 10px 0;
+        }
+        .content .head .temp ul{
+            display: flex;
+            color: white;
+            margin-top: 50px;
+        }
+        .content .head .temp ul li a{
+            color: white;
+            margin: 0 10px;
+            font-family:  sans-serif;
+            font-weight: 600;
+        }
+        .content .head .temp ul .circle a{
+            border: 1px solid white;
+            padding: 7px 10px;
+            border-radius: 20px;
+        }
+        .content .head .temp ul .circle a:hover{
+            background-color: rgba(0, 255, 255, 0.338);
+        }
+        .content .slider img{
+            height: 500px;
+            width: 650px;
+            margin-left: 200px;
+            margin-top: 50px;
+            animation: slider 2s linear 0s infinite;
+        }
+        @keyframes slider {
+            0%{
+                transform: translateY(-10px);
+            }
+            50%{
+                transform: translateY(20px);
+            }
+            100%{
+                transform: translateY(-10px);
+            }
+        }
+        .pictures{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .pictures img{
+            height: 40px;
+            width: 100px;
+            transition: all .5s linear;
+            filter: grayscale(1005);
+        }
+        .pictures img:hover{
+            transform: scale3d(1.2,1.2,1.2);
+            filter: grayscale(0);
+        }
+        .about{
+            margin-top: 40px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium';
+            color: #37517e;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 0, 0, 0.338);
+            text-underline-offset: 10px;
+        }
+        .about span{
+            position: absolute;
+            color: skyblue;
+            top: 688px;
+            right: 740px;
+        }
+        .para{
+            display: flex;
+            margin-top: 50px;
+            font-size: large;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        .paraone{
+            margin-right: 40px;
+            /* border: 1px solid red; */
+            width: 140vw;
+            height: 300px;
+            padding-left: 70px;
+        }
+        .para .paraone ul li{
+           margin: 20px 0 0 40px;
+           list-style: square;
+        }
+        .paratwo{
+            /* border: 1px solid red; */
+            padding-right: 70px;
+            
+        }
+        .para .paratwo span{
+            border: 3px solid skyblue;
+            padding: 10px 30px;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: skyblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all .5s ;
+        }
+        .para .paratwo span:hover{
+            background-color: skyblue;
+            color: white;
+        }
+        .parathree div{
+            /* border: 2px solid red; */
+            width: 50vw;
+            padding-left: 50px;
+            font-size: 40px;
+            word-spacing: 2px;
+            color: #37517e;
+        }
+        .parathree div::after{
+           
+            content: "velit pariatur architecto aut nihil";
+            font-weight: 800;
+            color: #37517e;
+        }
+        .parathree p{
+            width: 50vw;
+            padding: 10px 0 0 50px;
+            font-size: large;
+            color: gray;
+        } 
+        .parathree span h3{
+            /* border: 2px solid red; */
+            width: 50vw;
+            padding: 30px 0 0 50px;
+        }
+        .parathree span{
+            counter-reset: section;
+            counter-reset: sub-section;
+            
+        }
+        .parathree span h1::before{
+            content: counter(section);
+            counter-increment: section;
+        }
+       
+        .parathree span h3::before{
+            content: counter(section) counter(sub-section) " " " " ;
+            counter-increment: sub-section;
+        }
+        .image div img{
+            height: 500px;
+            width: 700px;
+            position: absolute;
+            top: 1000px;
+            right: 10px;
+        }
+        .progressbar div img{
+            height: 400px;
+            width: 700px;
+            margin: 0 0 0 100px;
+            /* border: 2px solid red; */
+        }
+        .progressbar{
+            display: flex;
+            /* border: 2px solid red;    */
+            margin-top: 150px;
+            justify-content: space-between;
+            
+        }
+        .progressbar .one .head div{
+            font-family: "poppins" sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+            color: #37517e;
+        }
+        .progressbar .one{
+            /* border: 2px solid red; */
+            padding-right: 40px;
+        }
+        .progressbar .one .head i{
+            font-size: 20px;
+            margin-top: 20px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.649);
+        }
+        .progressbar .one .bar .box{
+            /* border: 2px solid red; */
+            height: 15px;
+            margin: 5px 0;
+        }
+        .progressbar .one .bar p{
+            font-family: cursive;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            font-weight: 1000;
+            color: royalblue;
+        }
+        .progressbar .one .bar .box::after{
+            content: ' ';
+            background-color: #4668a2;
+            display: block;
+            height: 15px;
+            position: relative;
+            width: 0;
+        }
+        .progressbar .one .bar .box1::after{
+            animation: fill100 2s linear 0s 1 forwards;
+        }
+        .progressbar .one .bar .box2::after{
+            animation: fill90 2s linear 0s 1 forwards;
+        }
+        .progressbar .one .bar .box3::after{
+            animation: fill75 2s linear 0s 1 forwards;
+        }
+        .progressbar .one .bar .box4::after{
+            animation: fill55 2s linear 0s 1 forwards; 
+        }
+        @keyframes fill100 {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        @keyframes fill90 {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 90%;
+            }
+        }
+        @keyframes fill75 {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 75%;
+            }
+        }
+        @keyframes fill55 {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 55%;
+            }
+        }
+        .services div{
+            position: absolute;
+            top: 2128px;
+            left: 47.5vw;
+            background-color: #4668a2;
+            height: 3px;
+            width: 60px;
+        }
+        .boxes{
+            margin-top: 30px;
+            padding: 0 100px;
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .boxes .box:hover{
+            transform: translateY(-15px);
+        }
+        .boxes .box{
+            /* border: 2px solid royalblue; */
+            transition: all .3s linear;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+        }
+        .boxes .box .icon{
+            display: block;
+            height: 50px;
+            width: 50px;
+            color: #37517e;
+            font-size: 40px;
+            /* border: 2px solid royalblue; */
+            margin: 40px 0 20px 30px;
+        }
+        .boxes .box span{
+            font-size: 25px;
+            transition: all .3s;
+            color: #4668a2;
+            font-weight: 800;
+            margin-left: 30px;
+        }
+        .boxes .box p{
+            margin-top: 20px;
+            margin-left: 30px;
+            color: rgba(0, 0, 0, 0.578);
+        }
+        .boxes .box:hover span ,.icon{
+            color: aqua;
+        }
+        .back .hover:hover a{
+            background-color: aqua;
+            color: white;
+        }
+        .grid .box{
+            height: 500px;
+            width: 350px;
+            /* border: 2px solid red; */
+            margin: 20px;
+            overflow: hidden;
+        }
+        .grid .box img{
+            width: 100%;
+            transition: all 1.5s;
+            height: 100%;
+            /* position: relative; */
+        }
+        .grid .box:hover img{
+            transform: scale3d(1.2,1.2,1.2);
+        }
+        .grid .box .p{
+            position: relative;
+            height: 70px;
+            width: 350px;
+            background-color: #4668a2;
+            top: -70px;
+            padding: 10px;
+            opacity: 0;
+        }
+        .grid .box:hover .p{
+            opacity: 0.7;
+        }
+        .grid2 .box{
+            height: 500px;
+            width: 350px;
+            /* border: 2px solid red; */
+            margin: 20px;
+            overflow: hidden;
+        }
+        .grid2 .box img{
+            width: 100%;
+            transition: all 1.5s;
+            height: 100%;
+            /* position: relative; */
+        }
+        .grid2 .box:hover img{
+            transform: scale3d(1.2,1.2,1.2);
+        }
+        .grid2 .box .p{
+            position: relative;
+            height: 70px;
+            width: 350px;
+            background-color: #4668a2;
+            top: -70px;
+            padding: 10px;
+            opacity: 0;
+        }
+        .grid2 .box:hover .p{
+            opacity: 0.7;
+        }
+        .grid3 .box{
+            height: 500px;
+            width: 350px;
+            /* border: 2px solid red; */
+            margin: 20px;
+            overflow: hidden;
+        }
+        .grid3 .box img{
+            width: 100%;
+            transition: all 1.5s;
+            height: 100%;
+            /* position: relative; */
+        }
+        .grid3 .box:hover img{
+            transform: scale3d(1.2,1.2,1.2);
+        }
+        .grid3 .box .p{
+            position: relative;
+            height: 70px;
+            width: 350px;
+            background-color: #4668a2;
+            top: -70px;
+            padding: 10px;
+            opacity: 0;
+        }
+        .grid3 .box:hover .p{
+            opacity: 0.7;
+        }
+        .cards .card1{
+            transition: all .5s;
+            padding-left: 10px  ;
+        }
+    
+        .cards .card1:hover{
+            transform: translateY(-10px);
+        }
+        .pricing .box{
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 180px;
+        }
+        .pricing .box ul li{
+            list-style-type: square;
+            list-style-position: inside;
+            padding: 5px;
+            font-size: large;
+            color: rgba(128, 128, 128, 0.608);
+            
+        }
+        .pricing .box ul{
+            padding-top: 20px;
+        }
+        .pricing .box div{
+            color: skyblue;
+        }
+        .pricing .box div:hover{
+            background-color: aqua;
+            color: white;
+        }
+        .ques ul{
+            list-style: "?";
+        }
+        .ques ul li{
+            padding: 20px 0 20px 150px;
+            font-size: larger;
+        }
+        .CONTACT .cont .box:hover{
+            background-color: #4668a2;
+        }
+        .letter .sub{
+            color: white;
+            background-color: skyblue;
+            transition: all .5s;
+        }
+        .letter .sub:hover{
+            background-color: #4668a2;
+        }
+        .arsha .list ul li{
+            padding-bottom: 20px;
+            list-style-type: disc;
+            margin-left: 15px;
+        }
+        .Social .box{
+            border: 2px solid skyblue;
+            margin-right: 10px;
+            height: 40px;
+            width: 40px;
+            padding-left: 12px;
+            padding-top: 10px;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            background-color: skyblue;
+            transition: all .5s;
+        }
+        .Social .box:hover{
+            background-color: #4668a2;
+        }
+        .fixed{
+            height: 40px; 
+            border-radius: 50%;
+            width: 40px ;
+            border: 2px solid skyblue;
+            background-color: skyblue;
+            position: fixed;
+            /* padding-left: 400px; */
+            z-index: 1000;
+            bottom: 60px;
+            right: 20px;
+            
+        }
+        .fixed .icon{
+            padding-left: 12px;
+            color: white;
+            padding-top: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ARSHA</div>
+        <ul class="links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">dropdown</a></li>
+            <li><a href="#">contact</a></li>
+            <span class="circle">Get Started</span>
+        </ul>
+        
+    </nav>
+        <div class="content">
+            <div class="head">
+               <div class="heading">Better Solutions For Your <br> Business</div>
+               <h2>We are team of talented designers making websites with Bootstrap</h2>
+                <div class="temp">
+                   <ul>
+                    <li class="circle"><a href="#">Get Started</a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-play">Watch video</i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="slider">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="" class="image">
+            </div>
+        </div>
+        <div class="pictures">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" alt="" class="img">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-3.png" alt="">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" alt="">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-5.png" alt="">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="">
+        </div>
+        <div class="about"><span>___</span>
+            ABOUT US
+        </div>
+        <div class="para">
+            <div class="paraone">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit
+                </li>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </li>
+                </ul>
+            </div>
+            <div class="paratwo">
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span> Learn More</span>
+            </div>
+        </div>
+        <div class="parathree">                            
+            <div>Eum ipsam laborum deleniti</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+            <span>
+            <h3>  Non consectetur a erat nam at lectus urna duis?</h3>
+            <h3> Feugiat scelerisque varius morbi enim nunc?</h3>
+            <h3> Feugiat scelerisque varius morbi enim nunc?</h3>
+            </span>
+        </div>
+        <div class="image">
+            <div>
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" alt="">
+            </div>
+        </div>
+    <div class="progressbar">
+        <div class="imgg">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/skills.png" alt="">
+        </div>
+        <div class="one">
+            <div class="head">
+               <div> Voluptatem dignissimos provident quasi corporis voluptates</div>
+                <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+            </div>
+            <div class="bar">
+                <p>HTML</p>
+                <div class="box box1"></div>
+                <p>CSS</p>
+                <div class="box box2"></div>
+                <p>JAVASCRIPT</p>
+                <div class="box box3"></div>
+                <p>PHOTOSHOP</p>
+                <div class="box box4"></div>
+            </div>
+        </div>
+    </div> 
+    <div class="services">
+        <h1 style="margin-top: 150px; text-align: center; color: #37517e; text-decoration: underline; text-decoration-color: rgba(0, 0, 0, 0.318); text-underline-offset: 20px;">SERVICES</h1>
+        <div></div>
+        <p style=" margin-top: 30px; text-align: center; font-size: large; padding: 0 100px; color: rgb(16, 2, 2);">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div> 
+    <div class="boxes">
+        <div class="box">
+            <i class="fa-brands fa-dribbble icon"></i>
+            <span>Lorem Ipsum</span>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+        <div class="box">
+            <i class="fa-regular fa-file icon"></i>
+            <span>Sed ut perspici</span>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-bars icon"></i>
+            <span>Magni Dolores</span>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-trash icon"></i>
+            <span>Nemo Enim</span>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+        </div>
+    </div> 
+    <div class="back" style="display: flex; background-size: cover; background-repeat: no-repeat; min-height: 300px; background-color: #4668a2; ">
+        <div>
+        <h1 style="color: white; padding: 80px 0 0 70px;">Call to Action</h1>
+        <p style="font-size: large; width: 1200px; padding: 10px 0 0 70px; color: white;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="hover"><a href="#" style="border: 2px solid white; display: block; padding: 15px 50px; color: white; font-weight: 800; border-radius: 20px; margin-top: 110px; margin-left: 20px; transition: all .5s;"> Call To Action</a></div>
+    </div>
+    <div class="port">
+        <h1 style="color: #4668a2; text-align: center; margin-top: 30px; text-decoration: underline; text-underline-offset: 20px; text-decoration-color: gray;">PORTFOLIO</h1>
+        <div class="box" style="margin-top: 12px; height: 3px; width: 80px; background-color: #37517e; margin-left: 720px; position: relative;"></div>
+        <p style="margin: 20px 70px; text-align: center; font-size: large; color: rgba(0, 0, 0, 0.504);">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+   <div class="grid" style="display: flex; padding-left: 100px;">
+    <div class="box">
+       <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg" alt="">
+        <div class="p">
+            <p style="font-size: larger; font-weight: 600;">App 1</p>
+            <p style="font-size: larger;">App</p>
+            <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+        </div>
+    </div>
+    <div class="box" style="height: 300px; width: 400px;">
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-2.jpg" alt="">
+         <div class="p" style="width: 400px;">
+             <p style="font-size: larger; font-weight: 600;">App 2</p>
+             <p style="font-size: larger;">App</p>
+             <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+         </div>
+     </div>
+     <div class="box" style="height: 250px; width: 450px;">
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-3.jpg" alt="">
+         <div class="p" style="width: 450px;">
+             <p style="font-size: larger; font-weight: 600;">App 3</p>
+             <p style="font-size: larger;">App</p>
+             <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+         </div>
+     </div>
+   </div>
+    <div class="grid2" style="display: flex; margin-left: 100px;">
+        <div class="box">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-6.jpg" alt="">
+             <div class="p">
+                 <p style="font-size: larger; font-weight: 600;">App 3</p>
+                 <p style="font-size: larger;">App</p>
+                 <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+             </div>
+        </div>
+        <div class="box" style="margin-top: -180px; width: 400px; height: 550px;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-5.jpg" alt="">
+             <div class="p" style="width: 400px;">
+                 <p style="font-size: larger; font-weight: 600;">Web 2</p>
+                 <p style="font-size: larger;">Web</p>
+                 <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+             </div>
+        </div>
+        <div class="box" style="margin-top: -200px; height: 250px; width: 450px;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-4.jpg" alt="">
+             <div class="p" style="width: 450px;">
+                 <p style="font-size: larger; font-weight: 600;">Card 1</p>
+                 <p style="font-size: larger;">card</p>
+                 <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+             </div>
+        </div>
+    </div>
+    <div class="grid3" style="display: flex;margin-left: 500px;">
+        <div class="box" style="height: 300px; width: 400px; margin-top: -150px;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-9.jpg" alt="">
+             <div class="p" style="width: 400px;">
+                 <p style="font-size: larger; font-weight: 600;">Web 3</p>
+                 <p style="font-size: larger;">Web</p>
+                 <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+             </div>
+         </div>
+        <div class="grid4" style="margin-top: -480px;">
+            <div class="box" style="height: 250px; width: 440px;" >
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-7.jpg" alt="">
+                 <div class="p" style="width: 440px;">
+                     <p style="font-size: larger; font-weight: 600;">Card 1</p>
+                     <p style="font-size: larger;">Card</p>
+                     <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+                 </div>
+             </div>
+             <div class="box" style="height: 300px; width: 440px;">
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-8.jpg" alt="">
+                 <div class="p" style="width: 440px;">
+                     <p style="font-size: larger; font-weight: 600;">Card 3</p>
+                     <p style="font-size: larger;">Card</p>
+                     <i class="fa-solid fa-plus" style="float: right; margin-top: -30px; font-size: larger;"></i>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <div class="team">
+        <h1 style="text-align: center; margin-top: 50px; color: #37517e; text-decoration: underline; text-underline-offset: 20px; text-decoration-color: rgba(128, 128, 128, 0.326);"> Team</h1>
+        <div style="border: 2px solid #37517e; width: 30px; position: relative; top: 12px; left: 747px;"></div>
+        <p style="margin-top: 20px; font-size: larger; text-align: center; padding: 10px 40px; color: rgba(0, 0, 0, 0.596);">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    <div class="cards" style="display: flex; padding-top: 50px; padding-left: 150px;">
+        <div class="card1" style="margin-right: 20px; display: flex; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.277); width: 600px; height: 200px; align-items: center;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" style="height: 150px; border-radius: 50%;" alt="">
+            <div>
+                <h2 style="color: #37517e; padding-left: 20px; margin-left: 20px;">Walter White</h2>
+                <p style="margin-left: 40px; padding-top: 10px;">Cheif Executive Officer</p>
+                <div style="border: 2px solid rgba(128, 128, 128, 0.322); width: 50px; margin-left: 40px; margin-top: 10px;"></div>
+                <p style="margin-left: 40px; padding-top: 15px;">Explicabo voluptatem mollitia et repellat qui dolorum <br> quasi</p>
+                <div style="margin-left: 40px; margin-top: 20px; color: #37517e;">
+                    <i class="fa-brands fa-twitter" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-facebook" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-instagram" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-linkedin" style="padding-right: 10px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card1" style="display: flex; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288); width: 600px; height: 200px; align-items: center;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg" style="height: 150px; border-radius: 50%;" alt="">
+            <div>
+                <h2 style="color: #37517e; padding-left: 20px; margin-left: 20px;">Sarah Jhonson</h2>
+                <p style="margin-left: 40px; padding-top: 10px;">Product Manager</p>
+                <div style="border: 2px solid rgba(128, 128, 128, 0.322); width: 50px; margin-left: 40px; margin-top: 10px;"></div>
+                <p style="margin-left: 40px; padding-top: 15px;">Aut maiores voluptates amet et quis praesentium qui <br> senda para</p>
+                <div style="margin-left: 40px; margin-top: 20px; color: #37517e;">
+                    <i class="fa-brands fa-twitter" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-facebook" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-instagram" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-linkedin" style="padding-right: 10px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards" style="display: flex; padding-top: 50px; padding-left: 150px;">
+        <div class="card1" style="margin-right: 20px; display: flex; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.27); width: 600px; height: 200px; align-items: center;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg" style="height: 150px; border-radius: 50%;" alt="">
+            <div>
+                <h2 style="color: #37517e; padding-left: 20px; margin-left: 20px;">William Anderson</h2>
+                <p style="margin-left: 40px; padding-top: 10px;">CTO</p>
+                <div style="border: 2px solid rgba(128, 128, 128, 0.322); width: 50px; margin-left: 40px; margin-top: 10px;"></div>
+                <p style="margin-left: 40px; padding-top: 15px;">Quisquam facilis cum velit laborum corrupti fuga rerum <br>quia</p>
+                <div style="margin-left: 40px; margin-top: 20px; color: #37517e;">
+                    <i class="fa-brands fa-twitter" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-facebook" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-instagram" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-linkedin" style="padding-right: 10px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card1" style="display: flex; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.264); width: 600px; height: 200px; align-items: center;">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg" style="height: 150px; border-radius: 50%;" alt="">
+            <div>
+                <h2 style="color: #37517e; padding-left: 20px; margin-left: 20px;">Amanda Jepson</h2>
+                <p style="margin-left: 40px; padding-top: 10px;">Accountant</p>
+                <div style="border: 2px solid rgba(128, 128, 128, 0.322); width: 50px; margin-left: 40px; margin-top: 10px;"></div>
+                <p style="margin-left: 40px; padding-top: 15px;">Dolorum tempora officiis odit laborum officiis et et <br>accusamus</p>
+                <div style="margin-left: 40px; margin-top: 20px; color: #37517e;">
+                    <i class="fa-brands fa-twitter" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-facebook" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-instagram" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-linkedin" style="padding-right: 10px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <h1 style="text-align: center; margin-top: 50px; color: #37517e; text-decoration: underline; text-underline-offset: 20px; text-decoration-color: rgba(128, 128, 128, 0.326);"> PRICING</h1>
+        <div style="border: 2px solid #37517e; width: 60px; position: relative; top: 12px; left: 730px;"></div>
+        <p style="text-align: center; margin: 20px 50px; font-size: larger; color: gray;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    <div style="border: 2px solid #37517e;width: 500px; margin: auto; border-radius: 30%;"></div>
+    <div class="pricing" style="display: flex;">
+        <div class="box" >
+            <h2 style="color: #37517e; margin-bottom: 10px;">Free Plan</h2>
+            <p style="color: #37517e; font-size: 50px;"> <sup>$</sup>0</p>
+            <p style="color: rgb(12, 152, 208); font-size: large;">per month</p>
+            <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Pharetra massa massa ultricies</li>
+            <li>Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <div style="display: inline-block; border: 2px solid skyblue; padding: 10px 30px; margin-top: 20px; border-radius: 20px; font-weight: 600;">Get Started</div>
+        </div>
+        <div class="box">
+            <h2 style="color: #37517e; margin-bottom: 10px;">Free Plan</h2>
+            <p style="color: #37517e; font-size: 50px;"> <sup>$</sup>29</p>
+            <p style="color: rgb(12, 152, 208); font-size: large;">per month</p>
+            <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Pharetra massa massa ultricies</li>
+            <li>Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <div style="display: inline-block; border: 2px solid skyblue; padding: 10px 30px; margin-top: 20px; border-radius: 20px; font-weight: 600;">Get Started</div>
+        </div>
+        <div class="box">
+            <h2 style="color: #37517e; margin-bottom: 10px;">Free Plan</h2>
+            <p style="color: #37517e; font-size: 50px;"> <sup>$</sup>49</p>
+            <p style="color: rgb(12, 152, 208); font-size: large;">per month</p>
+            <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Pharetra massa massa ultricies</li>
+            <li>Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <div style="display: inline-block; border: 2px solid skyblue; padding: 10px 30px; margin-top: 20px; border-radius: 20px; font-weight: 600;">Get Started</div>
+        </div>
+    </div>
+    <div class="que">
+        <h1 style="text-align: center; color: #4668a2;">FREQUENTLY ASKED QUESTIONS</h1>
+        <div style="border: 2px solid #4668a2; width: 50px; margin-left: 750px; margin-top: 20px;"></div>
+        <div style="border: 2px solid gray;opacity: 0.5; width: 200px; position: relative; top: -3px; margin-left: 670px;"></div>
+        <p style="text-align: center; padding: 20px 80px; font-size: larger;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    <div class="ques">
+        <ul style="color: #37517e;margin: 50px 0 0 200  px;">
+            <li>Non consectetur a erat nam at lectus urna duis?</li>
+            <li>Feugiat scelerisque varius morbi enim nunc?</li>
+            <li>Dolor sit amet consectetur adipiscing elit?</li>
+            <li>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</li>
+            <li>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</li>
+        </ul>
+        
+    </div> 
+    <div class="price">
+        <h1 style="text-align: center; margin-top: 50px; color: #37517e; text-decoration: underline; text-underline-offset: 20px; text-decoration-color: rgba(128, 128, 128, 0.326);"> CONTACT</h1>
+        <div style="border: 2px solid #37517e; width: 60px; position: relative; top: 12px; left: 730px;"></div>
+        <p style="text-align: center; margin: 20px 50px; font-size: larger; color: gray;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div style="display: flex;">
+        <div style="border: 2px solid skyblue; width: 400px; margin-left: 100px;"></div>
+        <div style="border: 2px solid skyblue; width: 800px; margin-left: 100px;"></div>
+        </div>
+    </div>
+    <div class="CONTACT" style="display: flex;">
+        <div class="cont" style="margin-top: 50px; margin-left: 100px;">
+            <i class="fa-solid fa-location-dot box" style="font-size: xx-large; height: 50px; width: 50px;border-radius: 50%;padding-left: 13px; padding-top: 7px; color: skyblue; box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.463);"></i>
+            <span style="color: #37517e; font-size: x-large; font-weight: 800;">LOCATION:</span>
+            <p style="padding-left: 55px; padding-bottom: 30px;">A108 Adam Street, New York, NY 535022</p>
+            <i class="fa-regular fa-envelope box" style="font-size: xx-large; height: 50px; width: 50px;border-radius: 50%;padding-left: 10px; padding-top: 7px; color: skyblue; box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.463);"></i>
+            <span style="color: #37517e; font-size: x-large; font-weight: 800;">Email:</span>
+            <p style="padding-left: 55px; padding-bottom: 30px;">info@example.com</p>
+            <i class="fa-solid fa-mobile box" style=" font-size: xx-large; height: 50px; width: 50px;border-radius: 50%;padding-left: 13px; padding-top: 7px; color: skyblue; box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.463);"></i>
+            <span style="color: #37517e; font-size: x-large; font-weight: 800;">call:</span>
+            <p style="padding-left: 55px;">+1 5589 55488 55s</p>
+            <img style=" margin-top: 20px; height: 200px;" width="400px"  src="https://www.tarcgroups.com/upload_maps/tarc-kapashera-border-delhi-location-map-53799.jpg" alt="">
+        </div>
+        <div class="form">
+           <div style="display: flex; margin-top: 65px; margin-left: 150px;">
+            <form style="margin-right: 20px;">
+                <label style="font-size: large;">Your Name</label><br>
+                <input type="text" style="width: 400px; opacity: 20%; margin-top: 10px;height: 40px;">
+            </form>
+            <form>
+            <label style="font-size: large;">Your Mail</label> <br>
+            <input type="text" style="width: 400px; opacity: 20%; margin-top: 10px;height: 40px;">
+             </form>
+            </div>
+            <div style="margin-left: 150px;"><label style="font-size: large;">Subject</label> <br>
+            <input type="text" style="width: 820px; height: 40px; margin-top: 10px; opacity: 30%;"> <br> 
+            <label style="font-size: large; display: inline-block; margin-top: 40px; ">Message</label><br>
+            <input type="text" style="width: 820px; height: 200px; margin-top: 10px; opacity: 30%;"></div>
+        </div>
+    </div>
+    <div style="display: flex;"><div style="border: 2px solid skyblue; width: 400px; margin-left: 100px;"></div>
+     <div style="border: 2px solid skyblue; width: 800px; margin-left: 100px;"></div>
+    </div>
+    <div class="letter">
+        <h2 style="text-align: center; color: #4668a2; margin-top: 70px;">Join Our Newsletter</h2>
+        <p style="text-align: center; margin-top: 10px;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <div class="sub" style="border: 2px solid rgb(22, 116, 153); width: 100px; height: 40px; text-align: center; padding-top: 10px; margin-left: 900px; margin-top: 20px; border-radius: 20px;">
+            Subscribe
+        </div>
+    </div>
+    <div class="arsha" style="display: flex; margin-top: 50px; padding-left: 40pxx;">
+        <div style=" width: 230px; height: 300px; margin-left: 100px;">
+            <h1 style="color: #4668a2;">ARSHA</h1>
+            <p style="margin-top: 20px;">A108 Adam Street <br>
+                New York, NY 535022 <br>
+                United States</p>
+            <div style="margin-top: 30px;"><b>PHONE:</b> <span>+1 5589 55488 55</span></div>  
+            <div><b>EMAIL:</b> <span> info@example.com</span></div>  
+        </div>
+        <div class="list" style="margin-left: 100px;">
+            <p style="color: #4668a2; font-size: larger; font-weight: 800; margin-bottom: 20px;">Useful Links</p>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Terms of service</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+        <div class="list" style="margin-left: 150px;">
+            <p style="color: #4668a2; font-size: larger; font-weight: 800; margin-bottom: 20px;">Our Services</p>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Product Management</li>
+                <li>Marketing</li>
+                <li>Graphic Design</li>
+            </ul>
+        </div>
+        <div class="Social" style="margin-left: 200px;">
+            <p style="font-size: larger; font-weight: 800; color: #4668a2; margin-bottom: 20px;">Our Social Networks</p>
+            <p style="margin-bottom: 30px;">Cras fermentum odio eu feugiat lide par naso <br>tierra videa magna derita valies</p>
+            <i class="fa-brands fa-twitter box"></i>
+            <i class="fa-brands fa-facebook box"></i>
+            <i class="fa-brands fa-instagram box"></i>
+            <i class="fa-brands fa-skype box"></i>
+            <i class="fa-brands fa-linkedin box"></i>
+        </div>
+    </div>
+    <div class="fixed">
+   
+        <i class="fa-solid fa-up-long icon"></i>
+    </div>
+    <footer style="height: 80px; background-color: #4668a2; display: flex; justify-content: space-between; align-items: center; padding: 0 60px;">
+        <p style="color: white; width: 300px; height: 30px;">&copy; Copyright Arsha. All Rights Reserved</p>
+        <p>Designed by <span style="color: blue;">BootstrapMade</span></p>
+    </footer>
+    </body>
+</html>
